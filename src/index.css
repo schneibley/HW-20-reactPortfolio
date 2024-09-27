@@ -1,3 +1,33 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+html, body {
+  width: 100%;
+  height: 100%; /* Ensure the body and html take up the full height of the viewport */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Stack header, main content, and footer vertically */
+  align-items: center; /* Center content horizontally */
+  min-height: 100vh; /* Minimum height to fill the entire viewport */
+  margin: 0; /* Remove any default margin */
+}
+
+/* Main section to grow and take up remaining space */
+main {
+  flex-grow: 1; /* Allow main content to take up remaining space */
+  width: 100%; /* Full width */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; /* Center content in the main area */
+}
+
+/* Other styles remain unchanged */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -20,14 +50,6 @@ a {
 }
 a:hover {
   color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -65,4 +87,75 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(to right, #808080, #0000FF); /* Gradient from gray to blue */
+  width: 100%; /* Full width */
+  padding: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8); /* Fainter color for text */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3.5em; /* Make the h1 larger to stand out */
+  font-weight: 700; /* Bold to make it pop */
+  color: rgba(255, 255, 255, 1); /* Full white for emphasis */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a slight shadow for pop-out effect */
+}
+
+.navbar {
+  margin-top: 15px; /* Space between h1 and navbar */
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space out the nav links */
+}
+
+.navbar a {
+  color: rgba(255, 255, 255, 0.8); /* Fainter color for nav links */
+  text-transform: uppercase; /* Make the nav links uppercase */
+  font-size: 1.1em; /* Slightly larger font size */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+  color: rgba(255, 255, 255, 1); /* Full white on hover */
+}
+
+/* Footer Styles */
+footer {
+  background: linear-gradient(to right, #808080, #0000FF); /* Gradient from gray to blue */
+  width: 100%; /* Full width */
+  padding: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8); /* Fainter color for text */
+}
+
+footer h1 {
+  font-size: 1.5em; /* Smaller font size */
+  font-weight: 400; /* Regular weight */
+  color: rgba(255, 255, 255, 0.6); /* Fainter color for footer heading */
+  margin: 0 0 10px 0; /* Add margin for spacing */
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer a {
+  margin: 0 15px; /* Spacing between the icons */
+  display: inline-block; /* Center the icons */
+  vertical-align: middle;
+}
+
+footer img {
+  vertical-align: middle; /* Ensure logos align with the text */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+footer img:hover {
+  transform: scale(1.1); /* Slight zoom-in on hover */
 }
