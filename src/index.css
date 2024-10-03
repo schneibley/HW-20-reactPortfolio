@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  box-sizing: border-box; 
 }
 
 html, body {
@@ -15,23 +15,29 @@ html, body {
 
 body {
   display: flex;
-  flex-direction: column; /* Stack header, main content, and footer vertically */
-  align-items: center; /* Center content horizontally */
-  min-height: 100vh; /* Minimum height to fill the entire viewport */
-  margin: 0; /* Remove any default margin */
+  flex-direction: column; 
+  align-items: center; 
+  min-height: 100vh; 
+  margin: 0; 
 }
 
 /* Main section to grow and take up remaining space */
 main {
-  flex-grow: 1; /* Allow main content to take up remaining space */
-  width: 100%; /* Full width */
+  flex-grow: 1; 
+  width: 100%; 
   display: flex; 
   justify-content: center; 
-  align-items: center; /* Center content in the main area */
+  align-items: center; 
 }
 
-/* Other styles remain unchanged */
+#root {
+  width: 100%;
+  min-height: 80%;
+}
+
+
 :root {
+  
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

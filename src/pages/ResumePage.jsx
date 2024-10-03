@@ -4,16 +4,20 @@ const ResumePage = () => (
     <section>
       <h2>Resume</h2>
       
-      <h3>Proficiencies</h3>
+      <h3>Proficiencies:</h3>
       <ul>
         <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
         <li>CSS/HTML</li>
+        <li>Node.js</li>
+        <li>express</li>
+        <li>Postgresql</li>
+        <li>MongoDB/mongoose</li>
+        <li>React</li>
+        <li>  . . .more to come</li>
         {/* Add more proficiencies */}
       </ul>
 
-      <a href="/path/to/resume.pdf" download id="resume-link">Download My Resume</a>
+      <a href="/Resume.pdf" download id="resume-link">Download My Resume</a>
       
     </section>
   );

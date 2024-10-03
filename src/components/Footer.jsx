@@ -39,6 +39,17 @@ const Footer = () => (
           alt="Stack Overflow logo" 
         />
       </a>
+      <a 
+        href="https://www.instagram.com/schneibley/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <img 
+          src="/Instagram.png" 
+          width="25px" 
+          alt="instagram logo" 
+        />
+      </a>
       </footer>
   );
 
